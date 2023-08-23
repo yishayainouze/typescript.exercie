@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set container height to 100% of viewport height */
+    border-radius: 200px; /* Rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  .inner-div {
+    flex: 1;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 50%; /* Each inner div takes up 50% of container's height */
+  }
+  .inner-div img {
+    max-width: 10%;
+    max-height: 10%;
+    background-color: black;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="inner-div">
+  </div>
+  <div class="inner-div">
+    <p>Your text goes here.</p>
+  </div>
+</div>
+
+</body>
+</html>
